@@ -103,6 +103,12 @@ export function HomePage({
     console.log(imageSrc);
   }, [webcamRef]);
 
+  const showLoading = (() => {
+    // mapStateToProps({loading: true})
+    // this.loading = true;
+    onSubmitForm();
+  });
+
   const svgIcon = () => (
     <svg
       width="100%"
@@ -161,6 +167,7 @@ export function HomePage({
         videoConstraints={videoConstraints}
       /> */}
       <button onClick={capture}>Capture photo</button>
+      <button onClick={showLoading}>Show loading</button>
       {/* <div className="camera">
         <video ref={videoRef}></video>
         <button>SNAP!</button>
