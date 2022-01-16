@@ -18,6 +18,6 @@ export default defineMessages({
   },
   location: {
     id: `${scope}.location`,
-    defaultMessage: 'Location'
-  }
+    defaultMessage: 'Location',
+  },
 });

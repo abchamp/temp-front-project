@@ -103,11 +103,11 @@ export function HomePage({
     console.log(imageSrc);
   }, [webcamRef]);
 
-  const showLoading = (() => {
+  const showLoading = () => {
     // mapStateToProps({loading: true})
     // this.loading = true;
     onSubmitForm();
-  });
+  };
 
   const svgIcon = () => (
     <svg
